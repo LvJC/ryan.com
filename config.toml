@@ -1,6 +1,6 @@
 archetypeDir           = "archetypes"
 author                 = "admin"
-baseUrl                = "https://inspiring-mousse-379192.netlify.app"
+baseUrl                = "http://www.ryanlyu.art"
 buildDrafts            = false
 relativeURLs           = true
 canonifyUrls           = true
