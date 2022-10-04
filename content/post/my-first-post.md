@@ -1,9 +1,9 @@
 +++
-title = "My First post"
-date = "2017-08-30T18:34:02+00:00"
-tags = ["blog"]
+title = "My First Post"
+date = "2022-10-04T15:00:00+00:00"
+tags = ["post"]
 draft = false
-author = "admin"
+author = "Ryan"
 +++
 
-Hi, There!
+This is my first post. Hope everything goes well!

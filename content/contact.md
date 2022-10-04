@@ -1,5 +1,5 @@
 +++
-date = "2014-11-09T13:49:44+04:00"
+date = "2020-10-04T15:00:00+00:00"
 draft = false
 title = "Contact"
 slug = "contact"
