@@ -171,9 +171,20 @@ Here's a summary to know when use LBYL or EAFP.
 | Irrevocable operations, and operations that may have a side effect     | Input and output (IO) operations, mainly hard drive and network operations |
 | Common exceptional conditions that can be quickly prevented beforehand | Database operations that can be rolled back quickly                        |
 
+# Google Python Exception Guide
+
+Google recommend to use exceptions in such conditions:
+
+1. Do not use `assert` statements for validating argument values of a public API. `assert` is used to ensure internal correctness.
+2. Inherit from an existing exception class and define the customized exception.
+3. Catch the specific exceptions and never catch all exceptions unless re-raising exception or creating an isolating point.
+4. Minimize `try` / `except` block.
+5. Use `finally` clause whether or not an exception is raised in the `try` block.
+
 # Reference
 
 1. Errors and Exceptions, https://docs.python.org/3/tutorial/errors.html
 2. LBYL vs EAFP: Preventing or Handling Errors in Python, https://realpython.com/python-lbyl-vs-eafp/
 3. High Quality Code, *Coding Interviews: Questions, Analysis and Solutions*
 4. How to Best Use Try Except in Python – Especially for Beginners, https://www.techbeamers.com/use-try-except-python/
+5. https://google.github.io/styleguide/pyguide.html#24-exceptionshttps://google.github.io/styleguide/pyguide.htm
